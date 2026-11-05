@@ -7,11 +7,12 @@ from pathlib import Path
 # Add, remove, or edit relative paths here (relative to where this script lives).
 # ==============================================================================
 TARGET_DIRECTORIES = [
+    r"C_C++/c_sources/subeen",
+    r"C_C++/c_sources/broCode",
     r"C_C++/cpp_sources/broCode",
     r"C_C++/cpp_sources/codeWithMosh",
     r"C_C++/cpp_sources/freeCodeCamp",
     r"C_C++/cpp_sources/subeen",
-    r"C_C++/c_sources/subeen",
     r"JavaScript/js_scripts/zonayed",
     r"Python/py_scripts/codeWithMosh",
     r"Python/py_scripts/subeen",
@@ -40,7 +41,7 @@ def sync_vscode():
             target_parent.mkdir(parents=True, exist_ok=True)
 
         print(f"  [SYNC] Copying to -> {rel_path}\\.vscode")
-        
+
         # Overwrite/replace files inside target .vscode directory
         shutil.copytree(SOURCE_VSCODE, target_vscode, dirs_exist_ok=True)
         updated_count += 1
@@ -64,7 +65,7 @@ def git_commit():
 def main():
     if sync_vscode():
         git_commit()
-    
+
 
 if __name__ == "__main__":
     main()

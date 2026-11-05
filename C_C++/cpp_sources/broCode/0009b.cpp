@@ -2,35 +2,18 @@
 
 int main()
 {
-    using std::cin;
-    using std::cout;
-    using std::string;
-    using std::endl;
+    // Implicit Type Conversion (Cast) => Done by the compiler (Automatic)
+    // Explicit Type Conversion (Cast) => Done by you
 
+    int x = 3.141592; // Implicit Cast
+    double y = (int)3.141592; // Exlpicit Cast
+    char ch1 = 65;
 
-    string firstName = "";
-    string fullName = "";
-    int age = 0;
+    int correct = 8;
+    int total_questions = 10;
+    double fraction_in_percent = ( correct / (double)total_questions ) * 100;
     
-    cout << endl;
 
-    cout << "  What's your First name?\n  Name: ";
-    std::getline(std::cin, firstName);
-    cout << endl;
-
-    cout << "  What's your FULL name?\n  Name: ";
-    std::getline(std::cin, fullName);
-    cout << endl;
-    
-    cout << "  What's your Age?\n  Age: ";
-    cin >> age;
-    cout << endl;
-
-
-    cout << "Your first name is " << firstName << endl;
-    cout << "Your full name is " << fullName << endl;
-    cout << "You are " << age << " years old." << endl;
-    cout << endl;
-
+    std::cout << x << std::endl;
     return 0;
 }

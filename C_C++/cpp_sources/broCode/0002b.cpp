@@ -1,52 +1,94 @@
-// 0002.cpp
-
 #include <iostream>
-#include <stdio.h>
 
 int main()
 {
-    int x;
-    x = 5;
+    // #######################
+    // ## Integer DATA Type ##
+    // #######################
+    int x; // Declaration
+    x = 5; // Assignment
 
-    int y = 6;
+    int y = 6; // Both Declaration and Assignment at same time
+
     int sum = x + y;
 
-    std::cout << "x = " << x << '\n';
-    std::cout << "y = " << y << '\n';
-    std::cout << "sum = " << sum << '\n';
-    
+    // Print the value of variable 'x'
+    std::cout << x << std::endl;
+
+    // Print the value of variable 'y'
+    std::cout << "y = " << y << std::endl;
+
+    // Just empty line
+    std::cout << std::endl;
+    std::cout << std::endl;
+
+    // Print the value of variable 'sum'
+    std::cout << "Sum = x + y = " << x << " + " << y << " = " << sum << std::endl;
+
+
+
+    // ######################
+    // ## Double DATA Type ##
+    // ######################
+    double price = 10.9;
+    double cgpa = 3.97;
+    std::cout << "CGPA = " << cgpa << std::endl;
+
+
+
+    // ####################
+    // ## Char DATA Type ##
+    // ####################
+    char grade = 'A';
+    char currency = '$';
+    std::cout << "Grade: " << grade << ", " << "Currency: " << currency << std::endl;
+
+
+
+    // #######################
+    // ## Boolean DATA Type ##
+    // #######################
+    /*
+        Boolean represents just 2 states.
+        Either
+            true
+        or
+            false
+    */
+    bool power = true;
+    bool isStudent = false;
+
+
+
+    // ######################
+    // ## String DATA Type ##
+    // ######################
+    /*
+        Unlike C programming language, where there are no string datatype
+        and you have to use Array of characters (char),
+
+        The standard library in C++ provides a dedicated datatype
+        for String `std::string`.
+    */
+    std::string name = "Fatin Ilham";
+    std::string day = "Monday";
+    std::string address = "Times Square, Manhattan, New York";
+    std::cout << "Name: " << name << std::endl;
+    std::cout << "Day: " << day << std::endl;
+
+    // Just empty line
+    std::cout << std::endl;
+    std::cout << std::endl;
+
 
     /*
-        ###############
-        ## DataTypes ##
-        ###############
+        When console output, pay attention to spaces
     */
-    
-    // Double (8 Byte) (Floating point number)
-    double price = 10.89;
-    double temperature = 25.1;
+    std::cout << "Hello " << name << "," << std::endl;
+    std::cout << "You live in " << address << "." << std::endl;
+    std::cout << "Today's day is: " << day << "." << std::endl;
 
-
-    // Char (1 Byte) (Single character)
-    char grade = 'A';
-    char currecySign = '$';
-
-    std::cout << "The price is " << currecySign << price << '\n';
-    std::cout << "Your grade is " << grade << std::endl;
-
-
-    // Boolean (Either "true" or "false")
-    bool isStduent = false;
-    bool powerStatus = true;
-
-
-    // String (Array of characters) (Objects that represents a sequence of text)
-    std::string name = "Alex";
-
-
-    std::cout << "Your name is " << name << "." << std::endl;
-
-    std::cout << "Bye Bye" << std::endl;
 
     return 0;
+
 }

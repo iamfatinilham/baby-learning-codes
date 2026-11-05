@@ -1,21 +1,19 @@
-// 0003.cpp
-
 #include <iostream>
-
-// Global variable
-const double PI = 3.141592;
-const long long speedOfLight = 3e9;
+#include <cmath> // Needed for pow(base, power) function
 
 int main()
 {
-    double radius = 2.0;
-    std::cout << "Radius = " << radius << std::endl;
+    const double PI = 3.141592; // With the "const" keywrd, you cannot change the value later
 
-    std::cout << "PI = " << PI << std::endl;
-    
-    std::cout << "Speed of Light = " << speedOfLight << std::endl;
-    
-    std::cout << "Area = " << PI*radius*radius << " Square Centemeteres." << std::endl;
-    
+    double radius = 0;
+    std::cout << "Enter the radius: ";
+    std::cin >> radius;
+
+    double circumference = 2 * PI * radius;
+    double area = PI * pow(radius, 2);
+
+    std::cout << "  Circumference: " << circumference << std::endl;
+    std::cout << "  Area: " << area << std::endl;
+
     return 0;
 }

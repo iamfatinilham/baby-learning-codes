@@ -8,7 +8,7 @@
 #include<stdio.h>
 
 
-// Write main function (Mandatory in every C program. This is what the compiler look for)
+// Write main function (Mandatory in every C/C++ program. This is what the compiler look for)
 int main() // ◄══ Main function
 { // ◄══ Start of Main function
 
@@ -32,10 +32,14 @@ int main() // ◄══ Main function
     //                This (\n) is an backslash escape sequence.
     //                Which moves the text cursor to the next line.
 
+
+    
     /*
       ║  Return exit code 0 if the upper instructions ran successfully.
       ║  Exit code 0 means, the program exited with no errors.
       ▼  */
-    return 0; // ◄══ Always need to remember Semicolons (;)
-
-} // ◄══ End of Main function
+    return 0; // The end of program. Here '0' means that the program ended succesfully.
+    //      ▲
+    //      ╚══ Always need to remember Semicolons (;) at the end of each statements
+    
+} // End of Main Function
