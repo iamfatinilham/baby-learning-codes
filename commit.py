@@ -7,15 +7,18 @@ from pathlib import Path
 # Add, remove, or edit relative paths here (relative to where this script lives).
 # ==============================================================================
 TARGET_DIRECTORIES = [
-    r"C_C++/c_sources/subeen",
-    r"C_C++/c_sources/broCode",
-    r"C_C++/cpp_sources/broCode",
-    r"C_C++/cpp_sources/codeWithMosh",
-    r"C_C++/cpp_sources/freeCodeCamp",
-    r"C_C++/cpp_sources/subeen",
-    r"JavaScript/js_scripts/zonayed",
-    r"Python/py_scripts/codeWithMosh",
-    r"Python/py_scripts/subeen",
+    r"Learning Languages/C_C++/c_sources/subeen",
+    r"Learning Languages/C_C++/c_sources/broCode",
+    r"Learning Languages/C_C++/cpp_sources/broCode",
+    r"Learning Languages/C_C++/cpp_sources/codeWithMosh",
+    r"Learning Languages/C_C++/cpp_sources/freeCodeCamp",
+    r"Learning Languages/C_C++/cpp_sources/subeen",
+    r"Learning Languages/JavaScript/js_scripts/zonayed",
+    r"Learning Languages/Python/py_scripts/codeWithMosh",
+    r"Learning Languages/Python/py_scripts/subeen",
+
+    r"Competitive Programming/CODEFORCES/Problemset",
+    r"Competitive Programming/beecrowd/problems",
 ]
 
 # Base paths relative to this script's location
