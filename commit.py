@@ -17,7 +17,9 @@ TARGET_DIRECTORIES = [
     r"Learning Languages/Python/py_scripts/codeWithMosh",
     r"Learning Languages/Python/py_scripts/subeen",
 
-    r"Competitive Programming/CODEFORCES/Problemset",
+    r"Competitive Programming/CODEFORCES/problemset",
+    r"Competitive Programming/CODEFORCES/problemset",
+
     r"Competitive Programming/beecrowd/problems",
 ]
 

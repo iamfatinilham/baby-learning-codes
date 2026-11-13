@@ -9,9 +9,11 @@ int main(int argc, char const *argv[])
     int age = 21;
     bool isStudent = true;
 
-    std::cout << &name << std::endl;
-    std::cout << &age << std::endl;
-    std::cout << &isStudent << std::endl;
+    // The '&' before a variable means the (address-of) operator
+
+    std::cout << "The memory address of variable name (in hexadecimal) is: " << &name << std::endl;
+    std::cout << "The memory address of variable age (in hexadecimal) is: " << &age << std::endl;
+    std::cout << "The memory address of variable isStudent (in hexadecimal) is: " << &isStudent << std::endl;
 
     return 0;
 }

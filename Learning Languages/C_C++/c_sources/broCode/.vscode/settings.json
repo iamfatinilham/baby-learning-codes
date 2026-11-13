@@ -1,6 +1,9 @@
 {
+    
     // Visual Studio Code COZY settings UwU ☺️
     // Made by Fatin Ilham 👋 (https://github.com/iamfatinilham/baby-learning-codes)
+    
+    
     //Indentation & File Basics
     "files.eol": "\n",
     "editor.tabSize": 4,
@@ -9,11 +12,16 @@
     "editor.detectIndentation": false,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
+    "update.showReleaseNotes": false,
+    
+    
     // UI & Workbench
+    "security.workspace.trust.enabled": false,
     "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace", // Jetbrains Mono font: https://www.jetbrains.com/mono
     "editor.fontLigatures": true,
     "workbench.colorTheme": "Aura Dark",
     "workbench.iconTheme": "vscode-icons",
+    
     "workbench.colorCustomizations": {
         "[Aura Dark]": {
             "editor.selectionBackground": "#4d385d",
@@ -23,6 +31,7 @@
             "editor.findMatchHighlightBackground": "#a02dff65",
         },
     },
+    
     "editor.renderWhitespace": "trailing",
     "workbench.editor.showTabs": "multiple",
     "editor.bracketPairColorization.enabled": true,
@@ -34,8 +43,10 @@
     "explorer.sortOrder": "type",
     "scm.compactFolders": false,
     "scm.inputFontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+    
+    
     // Editor Behavior
-    //"editor.smoothScrolling": true,
+    "editor.smoothScrolling": true,
     //"editor.minimap.renderCharacters": false,
     "files.autoSave": "afterDelay",
     "editor.formatOnSave": true,
@@ -47,11 +58,105 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorBlinking": "expand",
     "search.showLineNumbers": true,
+    
     "files.exclude": {
-        "**/node_modules": true,
+        
+        // OS & Version Control Internals
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.log": true,
+        
+        // JavaScript / TypeScript / Web
         "**/node_modules/**": true,
-        //"**/*.log": true,
+        "**/node_modules": true,
+        "**/.next": true,
+        "**/.nuxt": true,
+        "**/.svelte-kit": true,
+        "**/.turbo": true,
+        "**/.parcel-cache": true,
+        "**/dist": true,
+        
+        // Python
+        "**/__pycache__": true,
+        "**/*.py[cod]": true,
+        "**/.pytest_cache": true,
+        "**/.mypy_cache": true,
+        "**/.ruff_cache": true,
+        "**/*.egg-info": true,
+        
+        // C / C++
+        "**/*.o": true,
+        "**/*.obj": true,
+        "**/*.a": true,
+        "**/*.lib": true,
+        "**/*.so": true,
+        "**/*.dylib": true,
+        "**/*.dll": true,
+        "**/*.exe": true,
+        "**/*.out": true,
+        "**/*.pdb": true,
+        "**/*.ilk": true,
+        "**/CMakeFiles": true,
+        "**/CMakeCache.txt": true,
+        
+        // C# / .NET
+        "**/*.suo": true,
+        "**/*.user": true,
+        "**/*.nupkg": true,
+        
+        // Java / JVM
+        "**/*.class": true,
+        "**/.gradle": true,
+        "**/.settings": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        
+        // Rust & Go
+        "**/*.rlib": true,
+        "**/*.rmeta": true,
+        "**/*.test": true
     },
+    
+    "search.exclude": {
+        
+        // VS Code Defaults
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/build/**": true,
+        
+        // JavaScript / TypeScript Lockfiles & Minified Assets
+        "**/package-lock.json": true,
+        "**/yarn.lock": true,
+        "**/pnpm-lock.yaml": true,
+        "**/bun.lockb": true,
+        "**/*.min.js": true,
+        "**/*.min.css": true,
+        "**/*.map": true,
+        "**/*.chunk.js": true,
+        
+        // Python Virtual Environments & Lockfiles
+        "**/.venv": true,
+        "**/venv": true,
+        "**/poetry.lock": true,
+        "**/Pipfile.lock": true,
+        "**/uv.lock": true,
+        
+        // Rust & Go Lockfiles
+        "**/Cargo.lock": true,
+        "**/go.sum": true,
+        
+        // Java Archives
+        "**/*.jar": true,
+        "**/*.war": true,
+        "**/*.ear": true
+    },
+    
     "json.schemaDownload.trustedDomains": {
         "https://developer.microsoft.com/json-schemas/": true,
         "https://json-schema.org/": true,
@@ -64,10 +169,16 @@
         "https://spec.openapis.org/": true,
         "https://www.schemastore.org/": true
     },
+    
+    
+    // Networking
+    "network.meteredConnection": "off",
+    
+    
     // Git & Terminal
     //"terminal.integrated.defaultProfile.windows": "Command Prompt",
     "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono', 'JetBrains Mono', Consolas, 'Courier New', monospace",
-    "terminal.integrated.fontLigatures.enabled": false,
+    "terminal.integrated.fontLigatures.enabled": true,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorWidth": 3,
     "terminal.integrated.cursorBlinking": true,
@@ -75,6 +186,7 @@
     "terminal.integrated.lineHeight": 1.2,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "git.path": "C:/Program Files/Git/cmd/git.exe", // Windows specific
+    
     // Windows specific setting
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
@@ -90,45 +202,76 @@
             "icon": "terminal-git-bash",
         },
     },
+    
+    
     // Markdown Settings
     "[markdown]": {
         "editor.wordWrap": "off",
     },
+
+    // JSON File Settings
+    "[json]": {
+        "editor.formatOnSave": false,
+        "editor.formatOnPaste": false,
+        "editor.formatOnType": false
+    },
+
+    // JSONC File Settings
+    "[jsonc]": {
+        "editor.formatOnSave": false,
+        "editor.formatOnPaste": false,
+        "editor.formatOnType": false
+    },
+
+
     // C/C++ Settings
     "C_Cpp.default.intelliSenseMode": "windows-gcc-x64", // Windows specific
     "C_Cpp.default.compilerPath": "C:/mingw64/bin/gcc.exe", // Windows specific
     "C_Cpp.default.cStandard": "c23",
     "C_Cpp.default.cppStandard": "c++26",
-    "C_Cpp.intelliSenseUpdateDelay": 500,
+    "C_Cpp_Runner.cCompilerPath": "gcc",
+    "C_Cpp_Runner.cppCompilerPath": "g++",
+    "C_Cpp_Runner.debuggerPath": "gdb",
+    "C_Cpp_Runner.useMsvc": false,
+    //"C_Cpp.intelliSenseUpdateDelay": 500,
+    //"C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    //"C_Cpp.codeAnalysis.runAutomatically": true,
     //"C_Cpp.markdownInComments": "enabled",
     "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
     "C_Cpp.inlayHints.parameterNames.enabled": true,
     "C_Cpp.inlayHints.referenceOperator.enabled": true,
     "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false,
     //"C_Cpp_Runner.msvcBatchPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Auxiliary/Build/vcvarsall.bat",
+    
     "cmake.additionalCompilerSearchDirs": [
         "C:/mingw64/bin/",
         "C:/Program Files/LLVM/bin",
     ],
+    
     "C_Cpp.default.defines": [
         "_DEBUG",
         "UNICODE",
         "_UNICODE"
     ],
+    
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/**",
-        //"C:/mingw64/x86_64-w64-mingw32/include", // Windows specific
-        //"C:/mingw64/x86_64-w64-mingw32/lib", // Windows specific
-        //"C:/mingw64/include/", // Windows specific
+        "C:/mingw64/x86_64-w64-mingw32/include",
+        "C:/mingw64/include/c++"
     ],
+
     "[c]": {
         "editor.defaultFormatter": "ms-vscode.cpptools",
     },
+    
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools",
     },
+    
     //"C_Cpp.default.compileCommands": [
     //],
+    
+    
     // Python Settings
     "python.languageServer": "Pylance",
     "python.experiments.enabled": false,
@@ -138,16 +281,24 @@
     //"python.analysis.diagnosticSeverityOverrides": {
     //    "reportGeneralTypeIssues": "none",
     //},
+    
+    
     // Rust-analyzer Extension settings
     "rust-analyzer.check.command": "clippy",
+    
+    
     // TODO tree Extension settings
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)|todo!",
+    
+    
     // Code Runner Extension settings
     "code-runner.clearPreviousOutput": true,
     "code-runner.preserveFocus": true,
     "code-runner.respectShebang": true,
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
+    
+    
     // Code Runner: Executor Map
     // Windows specific
     "code-runner.executorMap": {
@@ -209,7 +360,8 @@
         "pkl": "cd $dir && mkdir output -Force | Out-Null && pkl eval -f yaml $fileName -o output/$fileNameWithoutExt.yaml",
         "gleam": "gleam run -m $fileNameWithoutExt",
     },
-    "network.meteredConnection": "off",
+
+
     // // Code Runner: Executor Map
     // // Linux / MacOS specific
     //"code-runner.executorMap": {
